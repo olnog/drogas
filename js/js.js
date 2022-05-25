@@ -1,0 +1,10 @@
+geography = new Geography()
+game = new Game()
+ui = new UI()
+ui.refresh()
+game.init()
+ui.display('connects')
+
+setInterval(game.loop, 1000)
+setInterval(ui.animating, 250)
+ui.status("ya")
